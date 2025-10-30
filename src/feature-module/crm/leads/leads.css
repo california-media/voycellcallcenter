@@ -1,0 +1,314 @@
+/* Default styling for the cell */
+.hoverable-cell {
+  position: relative;
+  cursor: pointer;
+}
+
+/* Flex container to align lead name and icons */
+.cell-content {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* Styling for lead name */
+.lead-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: calc(100% - 20px);
+  padding-right: 0px;
+  text-decoration: none !important;
+}
+.customer-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: calc(100% - 20px);
+  padding-right: 0px;
+  text-decoration: none !important;
+}
+
+/* Icons positioned to the right */
+.icons {
+  position: absolute;
+  right: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: none;
+  gap: 10px;
+}
+
+/* Show icons on hover */
+.hoverable-cell:hover .icons {
+  display: flex;
+}
+
+/* On hover - text gets truncated */
+.hoverable-cell:hover .lead-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: calc(100% - 80px);
+}
+.hoverable-cell:hover .customer-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: calc(100% - 100px);
+}
+/* Optional: Style the icons */
+.icons svg {
+  color: gray;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+/* On hover, change icon color */
+.icons svg:hover {
+  color: darkgreen;
+}
+.action-icons{
+    background-color: #fafafa;
+}
+
+.popup input.form-control{
+  padding: 5px 0.85rem !important;
+  min-height: 35px !important;
+}
+
+.popup .btn{
+    padding: 4px 15px !important;
+}
+.popup .p-dropdown.p-component.p-inputwrapper{
+  height: 35px !important;
+}
+
+
+
+
+.filter-dropdown-menu.dropdown-menu.dropdown-menu-md-end.p-3.show{
+  right: -310px !important;
+}
+
+
+
+
+/* code for phone column */
+
+
+
+  .phone-content {
+    display: flex;
+    align-items: center;
+  }
+  
+
+  /* .phone-column:hover .edit-icon {
+    visibility: visible;
+  } */
+  
+  .edit-field {
+    display: flex;
+    align-items: center;
+  }
+  
+  .edit-field input {
+    margin-right: 10px;
+  }
+  
+  .edit-field button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .edit-field button:hover {
+    background-color: #0056b3;
+  }
+  .phone-column {
+    /* display: flex; */
+    align-items: center;
+  }
+  
+  /* .edit-icon {
+    cursor: pointer;
+    margin-left: 8px;
+  } */
+  
+  
+  /* .phone-column:hover .edit-icon {
+    display: inline;
+  } */
+
+
+.uploadSectionImage{
+  width: 40px;
+  height: 40px;
+}
+.uploadSectionImageBox{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.importIcons{
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+  justify-content: center;
+  display: flex;
+}
+
+.importMenu:hover{
+  background-color: #e5f2fd;
+  cursor: pointer;
+} 
+.importType{
+  font-weight: 600;
+}
+
+.importMenu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #90c6fe;
+  margin-right: 20px;
+  padding: 10px 0px;
+  border-radius: 10px;
+  width: 275px;
+}
+
+.importMenu.selected {
+  background-color: #e5f2fd;
+  box-shadow: 0 0 0 1px #2c5cc5;
+}
+
+
+
+
+.importMenu2{
+  width: 250px;
+  border: 1px solid #90c6fe;
+    display: flex;
+    height: 250px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    border-radius: 10px;
+    padding: 35px;
+}
+.importIcons2{
+  text-align: center;
+margin-bottom: 15px;
+}
+.importMenu2:hover{
+  background-color: #e5f2fd;
+  cursor: pointer;
+} 
+.importMenu2.selected {
+  background-color: #e5f2fd;
+  box-shadow: 0 0 0 1px #2c5cc5;
+}
+.importType2{
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.uploadSectionContainer{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.uploadSectionInnerBox{
+  border: 1px dashed #90c6fe;
+  padding: 30px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 35px -12px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 35px -12px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 35px -12px rgba(0,0,0,0.75);
+text-align: center;
+}
+.uploadHeading{
+font-size: 32px;
+font-weight: 700;
+text-align: center;
+margin-bottom: 90px;
+}
+.uploadSubHeading{
+  text-align: center;
+  margin-bottom: 90px;
+}
+.wizardBtnContainer{
+  margin-top: 50px;
+  text-align: center;
+}
+
+
+
+.kanban-drag-wrap {
+  touch-action: none; /* Prevent default scrolling behavior */
+  user-select: none; /* Disable text selection during drag */
+}
+.kanban-list-items{
+  max-height: calc(100vh - 170px);
+  overflow-y: scroll;
+  scrollbar-width: none !important;
+}
+.sortBtn{
+  width: 190px;
+}
+
+.noteDownload{
+  width: 250px;
+}
+
+/* .css-hlgwow{
+  padding: 2px 0px !important;
+} */
+.styleForEditBtn{
+  background-color: #dae5ff;
+  padding: 3px 8px;
+  border-radius: 4px;
+  color: #4A00E5;
+}
+.styleForEditBtn:hover{
+  color: #4A00E5;
+}
+.styleForDeleteBtn{
+  background-color: #ffdbdb;
+  padding: 3px 8px;
+  border-radius: 4px;
+  color: #ff2020;
+}
+.styleForDoneBtn{
+  background-color: #5cb85c1a;
+  padding: 3px 8px;
+  border-radius: 4px;
+  color: #5CB85C;
+}
+.styleForNotDoneBtn{
+  background-color: #fda7001a;
+  padding: 3px 8px;
+  border-radius: 4px;
+  color: #FDA700;
+}
+.styleForNotDoneBtn:hover{
+  color: #FDA700;
+}
+.styleForDoneBtn:hover{
+  color: #5CB85C;
+}
+.dropdownCusWidth{
+  width: 160px;
+}
+.iconWidth{
+  width: 20px;
+}
+.notesBorderLeft{
+  border-left: 1px solid #00918E  !important;
+}

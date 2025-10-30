@@ -1,0 +1,48 @@
+.group-avatar .avatar.cus-avatar {
+    width: 30px;
+    height: 30px;
+}
+
+.group-avatar .avatar.cus-avatar:not(:first-child) {
+    margin-left: -13px;
+}
+
+.avatar-initials {
+    background-color: #e0f5f1;
+    padding: 6px;
+    border-radius: 50%;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border: 2px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatarHoverCard {
+    position: absolute;
+    background: white;
+    color: black;
+    bottom: -155px;
+    left: 15px;
+    -webkit-box-shadow: 0px 0px 19px 0px rgba(194, 194, 194, 1);
+    -moz-box-shadow: 0px 0px 19px 0px rgba(194, 194, 194, 1);
+    box-shadow: 0px 0px 19px 0px rgba(194, 194, 194, 1);
+    border-radius: 4px;
+    padding: 20px 15px;
+    min-width: 400px;
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+.borderTopBottom{
+    border-bottom: 1px solid #cecece;
+    border-top: 1px solid #cecece;
+}
+.contactSince{
+    line-height: 30px;
+    margin-bottom: 0px;
+    color: #9595b5;
+    font-size: 12px;
+}

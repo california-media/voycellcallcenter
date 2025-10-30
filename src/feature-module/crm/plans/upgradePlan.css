@@ -1,0 +1,133 @@
+/* Current Plan Ribbon Styling */
+.ribbon {
+  position: absolute;
+  right: -5px;
+  top: -5px;
+  z-index: 1;
+  overflow: hidden;
+  width: 125px;
+  height: 125px;
+  text-align: right;
+}
+
+
+.ribbon span {
+  position: absolute;
+  display: block;
+  width: 175px;
+  padding: 8px 0;
+  left: -10px;
+  background-color: #28a745 !important;
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+  color: #fff !important;
+  font-weight: 700;
+  font-size: 12px;
+  text-shadow: 0 1px 1px rgba(0,0,0,.2);
+  text-transform: uppercase;
+  text-align: center;
+  top: 35px;
+  transform: rotate(45deg);
+}
+
+/* Plan card styling */
+.plan-card-current {
+  position: relative;
+  border-color: #28a745 !important;
+  border-width: 2px !important;
+}
+
+/* Subscription info section styling */
+.subscription-info {
+  border-left: 4px solid #007bff;
+}
+
+.subscription-info .badge {
+  font-size: 0.7rem;
+}
+
+.subscription-info .btn-sm {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+}
+
+/* Enhanced subscription info card styling */
+.subscription-info-card {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+.subscription-info-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.subscription-info-card .ant-card-body {
+  padding: 16px;
+}
+
+/* Alert card styling */
+.alert-card {
+  background: #f6f8fa;
+  border: 1px solid #e1e4e8;
+}
+
+.alert-card .ant-card-body {
+  padding: 12px 16px;
+}
+
+
+/* Badge styling for payment methods */
+.ant-badge {
+  margin-left: auto;
+}
+
+.subscription-info .alert {
+  font-size: 0.8rem;
+  border: none;
+  margin: 0;
+}
+
+/* Billing History Styles */
+.billing-upcoming-row {
+  background-color: #f0f9ff !important;
+  border-left: 3px solid #1890ff;
+}
+
+.billing-outstanding-row {
+  background-color: #fff7e6 !important;
+  border-left: 3px solid #fa8c16;
+}
+
+.billing-upcoming-row:hover,
+.billing-outstanding-row:hover {
+  background-color: #f5f5f5 !important;
+}
+
+/* Billing History Table Enhancements */
+.ant-table-tbody > tr.billing-upcoming-row > td,
+.ant-table-tbody > tr.billing-outstanding-row > td {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+/* Summary Cards */
+.ant-statistic .ant-statistic-title {
+  font-size: 12px;
+  color: #8c8c8c;
+}
+
+.ant-statistic .ant-statistic-content {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .billing-history-table .ant-table-thead th {
+    font-size: 12px;
+    padding: 8px 4px;
+  }
+  
+  .billing-history-table .ant-table-tbody td {
+    font-size: 12px;
+    padding: 8px 4px;
+  }
+}

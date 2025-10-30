@@ -1,0 +1,98 @@
+export const pipelineData = [
+  {
+    id: 1,
+    si_no: "",
+    pipelineName: "Sales",
+    deal_value: "$4,50,664",
+    no_deal: "315",
+    pipelineStage: "Win",
+    createdat: "25 Sep 2023",
+    pipelineStatus: "Active",
+    Action: "",
+    key: "1"
+  },
+  {
+    id: 2,
+    si_no: "",
+    pipelineName: "Marketing",
+    deal_value: "$3,12,893",
+    no_deal: "447",
+    pipelineStage: "Win",
+    createdat: "29 Sep 2023",
+    pipelineStatus: "Active",
+    Action: "",
+    key: "2"
+  },
+  {
+    id: 3,
+    si_no: "",
+    pipelineName: "Email",
+    deal_value: "$2,89,274",
+    no_deal: "654",
+    pipelineStage: "In Pipeline",
+    createdat: "15 Oct 2023",
+    pipelineStatus: "Active",
+    Action: "",
+    key: "3"
+  },
+  {
+    id: 4,
+    si_no: "",
+    pipelineName: "Chats",
+    deal_value: "$1,59,326",
+    no_deal: "768",
+    pipelineStage: "Win",
+    createdat: "29 Oct 2023",
+    pipelineStatus: "Active",
+    Action: "",
+    key: "4"
+  },
+  {
+    id: 5,
+    si_no: "",
+    pipelineName: "Operational",
+    deal_value: "$2,90,173",
+    no_deal: "142",
+    pipelineStage: "Win",
+    createdat: "03 Nov 2023",
+    pipelineStatus: "Inactive",
+    Action: "",
+    key: "5"
+  },
+  {
+    id: 6,
+    si_no: "",
+    pipelineName: "Collaborative",
+    deal_value: "$4,51,417",
+    no_deal: "315",
+    pipelineStage: "Conversation",
+    createdat: "17 Nov 2023",
+    pipelineStatus: "Active",
+    Action: "",
+    key: "6"
+  },
+  {
+    id: 7,
+    si_no: "",
+    pipelineName: "Differentiate",
+    deal_value: "$3,17,589",
+    no_deal: "478",
+    pipelineStage: "Lost",
+    createdat: "23 Nov 2023",
+    pipelineStatus: "Active",
+    Action: "",
+    key: "7"
+  },
+  {
+    id: 8,
+    si_no: "",
+    pipelineName: "Interact ",
+    deal_value: "$1,69,146",
+    no_deal: "664",
+    pipelineStage: "Lost",
+    createdat: "09 Dec 2023",
+    pipelineStatus: "Active",
+    Action: "",
+    key: "8"
+  },
+];

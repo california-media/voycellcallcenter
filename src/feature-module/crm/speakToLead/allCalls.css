@@ -1,0 +1,257 @@
+/* User Dashboard Styles */
+
+/* Page title styling to match leads */
+.page-title {
+  color: #262626;
+  font-weight: 600;
+}
+
+.count-title {
+  font-size: 14px;
+  color: #8c8c8c;
+  font-weight: 400;
+  margin-left: 8px;
+}
+
+/* User info section in header */
+.user-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.welcome-text {
+  font-size: 24px;
+  color: #262626;
+  margin-bottom: 5px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.current-date {
+  font-size: 14px;
+  color: #8c8c8c;
+  line-height: 1.2;
+}
+
+.extension-card {
+  border: 1px solid #e8f4ff;
+  background: linear-gradient(135deg, #e8f4ff 0%, #f6ffed 100%);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+  min-width: 140px;
+}
+
+.extension-id {
+  font-size: 13px;
+  color: #1890ff;
+  font-family: 'Courier New', monospace;
+  font-weight: 600;
+}
+
+/* Data Cards */
+.data-cards-row {
+  margin-bottom: 24px;
+}
+
+.metric-card {
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.metric-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.metric-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 0px;
+}
+
+.metric-icon {
+  padding: 8px;
+  border-radius: 8px;
+  background: rgba(24, 144, 255, 0.1);
+}
+
+.inbound-icon {
+  background: rgba(82, 196, 26, 0.1);
+  color: #52c41a;
+}
+
+.outbound-icon {
+  background: rgba(24, 144, 255, 0.1);
+  color: #1890ff;
+  margin-right: 10px;
+}
+.missed-icon {
+  background: rgba(141, 4, 4, 0.1);
+  color: #ff6767;
+  margin-right: 10px;
+}
+
+.credits-icon {
+  background: rgba(250, 140, 22, 0.1);
+  color: #fa8c16;
+}
+
+.total-icon {
+  background: rgba(114, 46, 209, 0.1);
+  color: #722ed1;
+}
+
+.metric-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #8c8c8c;
+}
+
+.metric-value .ant-statistic-content {
+  font-weight: 600;
+}
+
+.metric-change {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 12px;
+}
+
+.trend-icon {
+  border-radius: 50%;
+  padding: 2px;
+}
+
+.trend-icon.positive {
+  background: rgba(82, 196, 26, 0.1);
+  color: #52c41a;
+}
+
+.trend-icon.negative {
+  background: rgba(255, 77, 79, 0.1);
+  color: #ff4d4f;
+}
+
+.change-text {
+  font-size: 12px;
+  font-weight: 500;
+   white-space: nowrap;
+}
+
+.change-text.positive {
+  color: #52c41a;
+}
+
+.change-text.negative {
+  color: #ff4d4f;
+}
+
+/* Credits specific styles */
+.credits-display {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.credits-total {
+  font-size: 18px;
+  color: #bfbfbf;
+}
+
+/* Charts Section */
+.charts-section {
+  margin-top: 32px;
+}
+
+.chart-card {
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+}
+
+.chart-card .ant-card-head {
+  border-bottom: 1px solid #f0f0f0;
+  background: #fafafa;
+}
+
+.chart-card .ant-card-head-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #262626;
+}
+
+.chart-period {
+  font-size: 14px;
+  color: #8c8c8c;
+}
+
+.chart-card .ant-card-body {
+  padding: 24px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .user-dashboard {
+    padding: 16px;
+  }
+
+  .dashboard-header .ant-row {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .welcome-title {
+    font-size: 18px !important;
+  }
+
+  .metric-card {
+    margin-bottom: 16px;
+  }
+
+  .charts-section {
+    margin-top: 24px;
+  }
+
+  .chart-card .ant-card-body {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .data-cards-row .ant-col {
+    margin-bottom: 16px;
+  }
+
+  .metric-header {
+    margin-bottom: 12px;
+  }
+
+  .metric-value .ant-statistic-content {
+    font-size: 24px !important;
+  }
+
+  .credits-display {
+    flex-direction: column;
+    gap: 4px;
+  }
+}
+
+/* Ant Design overrides */
+.ant-card-bordered {
+  border: none;
+}
+
+.ant-statistic-content {
+  font-weight: 600;
+}
+
+.ant-progress-line {
+  margin-bottom: 4px;
+}

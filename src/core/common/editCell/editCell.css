@@ -1,0 +1,34 @@
+.clickToAdd:hover {
+    color: #2c5cc5 !important;
+    cursor: pointer;
+}
+
+.editable-cell {
+    position: relative;
+}
+
+.edit-icon {
+    visibility: hidden;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.editable-cell:hover .edit-icon {
+    visibility: visible;
+}
+
+.popup {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    position: 'absolute';
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: 'white';
+    border: '1px solid #ccc';
+    padding: '10px';
+    width: 300px;
+}

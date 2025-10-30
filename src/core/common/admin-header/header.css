@@ -1,0 +1,24 @@
+.header{
+      background: #fff;
+          border-radius: 20px;
+          margin: 40px 35px 25px 300px;
+}
+.mobile-user-menu{
+        display: none !important;
+}
+
+@media (max-width: 991px) {
+.mobile-user-menu{
+        display: block !important;
+      display: flex !important;
+      justify-content: center;
+        align-items: center;
+     
+}
+.header{
+     margin-left: 27px !important;
+     margin-right: 27px !important;
+     margin-top: 30px !important;
+}
+
+}

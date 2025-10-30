@@ -1,0 +1,175 @@
+/* ScriptGenerator.css */
+
+.preview-container {
+  padding: 16px;
+}
+
+.preview-description {
+  margin-bottom: 16px;
+}
+
+.preview-button-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 8px;
+  position: relative;
+  min-height: 120px;
+}
+
+.callme-btn-preview {
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+  width: 60px;
+  height: 60px;
+  background: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  font-size: 26px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s;
+}
+
+.callme-btn-preview:hover {
+  transform: scale(1.06);
+}
+
+.preview-popup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  min-height: 300px;
+}
+
+.callme-popup-preview {
+  background: #fff;
+  border-radius: 16px;
+  padding: 28px;
+  max-width: 440px;
+  width: 100%;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  position: relative;
+}
+
+.callme-popup-preview h3 {
+  color: #4CAF50;
+  font-size: 22px;
+  margin: 0 0 8px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.callme-popup-preview p {
+  color: #555;
+  margin: 0 0 18px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.preview-close-btn {
+  position: absolute;
+  right: 12px;
+  top: 10px;
+  border: none;
+  background: none;
+  font-size: 22px;
+  color: #999;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.preview-select,
+.preview-input {
+  font-size: 15px;
+  outline: none;
+}
+
+.preview-select {
+  padding: 12px;
+  background: #f7f7f7;
+  border: none;
+  min-width: 90px;
+  cursor: pointer;
+}
+
+.preview-input {
+  flex: 1;
+  padding: 12px;
+  border: none;
+}
+
+.preview-action-btn {
+  width: 100%;
+  padding: 14px;
+  border-radius: 10px;
+  border: none;
+  background: #4CAF50;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.preview-action-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .preview-popup {
+    min-height: 250px;
+  }
+  
+  .callme-popup-preview {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .preview-button-wrapper {
+    min-height: 100px;
+  }
+  
+  .callme-btn-preview {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+  
+  .callme-popup-preview {
+    padding: 16px;
+  }
+  
+  .callme-popup-preview h2 {
+    font-size: 18px;
+  }
+}
+
+/* Animation for preview elements */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.callme-popup-preview {
+  animation: fadeIn 0.3s ease-in-out;
+}
