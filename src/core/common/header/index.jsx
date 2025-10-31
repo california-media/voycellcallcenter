@@ -14,6 +14,7 @@ import { setPhone } from "../../data/redux/slices/appCommonSlice";
 import { resetProfile } from "../../data/redux/slices/ProfileSlice";
 import api from "../../axios/axiosInstance";
 import FloatingDialer from "../floating-dialer/FloatingDialer";
+import { closeDialer, openDialer } from "../../data/redux/slices/FloatingDialerSlice";
 
 const Header = () => {
   const route = all_routes;
@@ -28,6 +29,13 @@ const Header = () => {
   const [credits, setCredits] = useState(0);
   const [loadingCredits, setLoadingCredits] = useState(false);
   const phoneNumber = useAppSelector((state) => state.appCommon.phone);
+
+
+    const { isOpen } = useSelector(
+    (state) => state.floatingDialer
+  );
+
+
   useEffect(() => {
     setClientPhoneNumber(phoneNumber);
     phoneNumber && showDropdown();
@@ -259,15 +267,21 @@ const Header = () => {
                       aria-expanded="false"
                       style={{ minWidth: "130px" }}
                       onClick={() => {
-                        toggleDropdown();
+                        // toggleDropdown();
+                        if(isOpen){
+                          dispatch(closeDialer())
+                        }
+                        else{
+                          dispatch(openDialer())
+                        }
                       }}
                     >
                       <i className="typcn typcn-phone me-2" />
                       Dialer
                     </Link>
+{isOpen&&<FloatingDialer/>}
 
-
-                    <div
+                    {/* <div
                       className={`dropdown-menu dropdown-menu-end menus-info ${openDropdown ? "show" : ""
                         }`}
                       style={{
@@ -279,7 +293,7 @@ const Header = () => {
                         transform: "translate3d(0px, 38px, 0px)",
                       }}
                     >
-                      {/* Check if full dialer page is open */}
+                  
                       {userProfile?.isLinkusDialerActive ? (
                         <div className="p-4 text-center">
                           <i
@@ -311,7 +325,7 @@ const Header = () => {
                           </small>
                         </div>
                       )}
-                    </div>
+                    </div> */}
                   </div>
                 </li>
 

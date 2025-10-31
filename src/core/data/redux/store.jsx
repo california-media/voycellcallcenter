@@ -3,12 +3,14 @@ import appCommonReducer from "./slices/appCommonSlice";
 import commonSlice from "./commonSlice";
 import profileReducer from "./slices/ProfileSlice";
 import toastReducer from "./slices/ToastSlice";
+import floatingDialerReducer from "./slices/FloatingDialerSlice";
 
 const combinedReducer = combineReducers({
   common: commonSlice,
   appCommon: appCommonReducer,
   profile: profileReducer,
   toast: toastReducer,
+  floatingDialer: floatingDialerReducer,
 });
 
 const rootReducer = (state, action) => {
