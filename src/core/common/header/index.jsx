@@ -277,7 +277,7 @@ const Header = () => {
                       }}
                     >
                       <i className="typcn typcn-phone me-2" />
-                      Dialer
+                      Dialerr
                     </Link>
 {isOpen&&<FloatingDialer/>}
 
