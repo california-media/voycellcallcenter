@@ -1,17 +1,13 @@
 {
   "buildCommand": "",
   "outputDirectory": "build",
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    },
-    {
+  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" },
+ {
       "source": "/voycell_callback/:token*",
       "destination": "https://nf6fp9tcn6.execute-api.eu-north-1.amazonaws.com/voycell_callback/:token*"
     }
-  ],
-  "headers": [
+],
+"headers": [
     {
       "source": "/(.*)",
       "headers": [
