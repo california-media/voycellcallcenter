@@ -96,7 +96,7 @@ const ScriptGenerator = () => {
         <div className="row">
           <div className="col-md-12">
             <div className="card">
-              <div className="card-header">
+              {/* <div className="card-header">
                 <div className="row align-items-center">
                   <div className="col-sm-12">
                     <div className="d-flex justify-content-between align-items-center">
@@ -110,7 +110,7 @@ const ScriptGenerator = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
 
               <div className="card-body">
                 <Row gutter={[24, 24]}>
@@ -304,15 +304,17 @@ const ScriptGenerator = () => {
                           </Text>
                         </div>
 
-                        <div className="preview-button-wrapper">
-                          <button
-                            className="callme-btn-preview"
-                            style={{
-                              backgroundColor: formData.floatingButtonColor,
-                            }}
-                          >
-                            📞
-                          </button>
+                        <div className="preview-button-wrapper align-items-center">
+                        
+                            <button
+                              className="callme-btn-preview"
+                              style={{
+                                backgroundColor: formData.floatingButtonColor,
+                              }}
+                            >
+                              📞
+                            </button>
+                       
                         </div>
 
                         {/* Popup Modal Preview */}

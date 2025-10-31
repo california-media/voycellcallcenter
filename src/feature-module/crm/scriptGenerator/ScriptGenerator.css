@@ -11,16 +11,16 @@
 .preview-button-wrapper {
   display: flex;
   justify-content: flex-end;
-  padding: 20px;
+  padding: 12px;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   border-radius: 8px;
   position: relative;
-  min-height: 120px;
+  min-height: 80px;
 }
 
 .callme-btn-preview {
-  position: absolute;
-  bottom: 25px;
+  /* position: absolute; */
+  /* bottom: 25px; */
   right: 25px;
   width: 60px;
   height: 60px;
